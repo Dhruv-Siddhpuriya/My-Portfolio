@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-
 import { ArrowRight, Download } from 'lucide-react';
+import dhruvImg from '../assets/dhruv.jpg';
 
 const Hero = () => {
   return (
@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="relative w-72 h-72 md:w-[400px] md:h-[400px] rounded-[2rem] p-2 border-2 border-neon-blue/50 shadow-[0_0_50px_rgba(96,165,250,0.3)] bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 rotate-3 hover:rotate-0 transition-all duration-500">
               <div className="w-full h-full rounded-[1.8rem] overflow-hidden bg-gray-900">
                 <img 
-                  src="/src/assets/dhruv.jpg" 
+                  src={dhruvImg} 
                   alt="Dhruv Profile" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                 />
