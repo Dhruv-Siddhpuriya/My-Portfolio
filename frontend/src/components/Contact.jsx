@@ -17,7 +17,8 @@ const Contact = () => {
 
     try {
       // Send request to our Node.js backend
-      const response = await fetch('http://localhost:5001/api/contact', {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001';
+      const response = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
